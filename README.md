@@ -1,28 +1,32 @@
-# Google Engineering Practices Documentation
+# 谷歌工程实践文档
 
-Google has many generalized engineering practices that cover all languages and
-all projects. These documents represent our collective experience of various
-best practices that we have developed over time. It is possible that open source
-projects or other organizations would benefit from this knowledge, so we work to
-make it available publicly when possible.
+谷歌在很多语言和项目上都有大量的工程实践经验。这些文档代表了我们长期以来开发的各种最佳实践的经验。开源项目或其他组织可能会从这些知识中受益，这些文档代表了我们长期以来开发的各种最佳实践的集体经验。开源项目或其他组织可能会从这些知识中受益，因此我们努力在可能的情况下公开这些经验。
 
-Currently this contains the following documents:
+当前文档包含以下内容：
 
-*   [Google's Code Review Guidelines](review/index.md), which are actually two
-    separate sets of documents:
-    *   [The Code Reviewer's Guide](review/reviewer/index.md)
-    *   [The Change Author's Guide](review/developer/index.md)
+*   [谷歌代码评审指南](review/index.md), 包含两个子章节：
+    *   [评审者指南](review/reviewer/index.md)
+    *   [变更者指南](review/developer/index.md)
 
-## Terminology
+## 术语
 
-There is some Google-internal terminology used in some of these documents, which
-we clarify here for external readers:
+部分文档中会用到一些谷歌内部的术语，特在此说明:
 
-*   **CL**: Stands for "changelist," which means one self-contained change that
-    has been submitted to version control or which is undergoing code review.
-    Other organizations often call this a "change" or a "patch."
-*   **LGTM**: Means "Looks Good to Me." It is what a code reviewer says when
-    approving a CL.
+*   **CL**: "changelist"的缩写，代表已经进入版本控制软件或者正在进行代码评审的变更。
+    其他组织经常称为"change"或者"patch"。
+*   **LGTM**: "Looks Good to Me."的缩写，当评审者通过代码评审时会这么说。 
+    
+## 翻译进度
+
+| 章节 | 译者 | 翻译进度 | 预计完成时间 |   
+| :-------------: |:-------------:|:-----:| :-----:|  
+| [谷歌代码评审指南](review/index.md) |[@xindoo](https://github.com/xindoo)| 翻译中(版本:47ea81e) | 2019-09-15 | 
+### 如何参与翻译
+参考[翻译指南](CONTRIBUTEGUIDE.md)
+
+## 中文贡献者
+[@xindoo](https://github.com/xindoo)  
+
 
 ## License
 
