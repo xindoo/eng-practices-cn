@@ -19,8 +19,22 @@
 ## 翻译进度
 
 | 章节 | 译者 | 翻译进度 | 预计完成时间 |   
-| :-------------: |:-------------:|:-----:| :-----:|  
-| [谷歌代码评审指南](review/index.md) |[@xindoo](https://github.com/xindoo)| 翻译中(版本:47ea81e) | 2019-09-15 | 
+| :------------- |:-------------:|:-----:| :-----:|  
+| [README.md](README.md) |[@xindoo](https://github.com/xindoo)| 翻译完成(版本:47ea81e) | 2019-09-13 | 
+| [review/developer/cl-descriptions.md](review/developer/cl-descriptions.md) |  | |  |     
+| [review/developer/handling-comments.md](review/developer/handling-comments.md) |  | |  |    
+| [review/developer/index.md](review/developer/index.md) |  | |  |    
+| [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
+| [review/emergencies.md](review/emergencies.md) |  | |  |    
+| [review/index.md](review/index.md) |  | |  |    
+| [review/reviewer/comments.md](review/reviewer/comments.md ) |  | |  |  
+| [review/reviewer/index.md](review/reviewer/index.md ) |  | |  |  
+| [review/reviewer/looking-for.md](review/reviewer/looking-for.md ) |  | |  |  
+| [review/reviewer/navigate.md](review/reviewer/navigate.md ) |  | |  |  
+| [review/reviewer/pushback.md](review/reviewer/pushback.md ) |  | |  |  
+| [review/reviewer/speed.md](review/reviewer/speed.md ) |  | |  |  
+| [review/reviewer/standard.md](review/reviewer/standard.md ) |  | |  |   
+```        
 ### 如何参与翻译
 参考[翻译指南](CONTRIBUTEGUIDE.md)
 
