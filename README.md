@@ -14,27 +14,8 @@
 
 *   **CL**: "changelist"的缩写，代表已经进入版本控制软件或者正在进行代码评审的变更。
     其他组织经常称为"change"或者"patch"。
-*   **LGTM**: "Looks Good to Me."的缩写，当评审者通过代码评审时会这么说。 
-    
-## 翻译进度
-
-| 章节 | 译者 | 翻译进度 | 预计完成时间 |   
-| :------------- |:-------------:|:-----:| :-----:|  
-| [README.md](README.md) |[@xindoo](https://github.com/xindoo)| 翻译完成(版本:47ea81e) | 2019-09-13 | 
-| [review/developer/cl-descriptions.md](review/developer/cl-descriptions.md) |  | |  |     
-| [review/developer/handling-comments.md](review/developer/handling-comments.md) |  | |  |    
-| [review/developer/index.md](review/developer/index.md) |  | |  |    
-| [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
-| [review/emergencies.md](review/emergencies.md) |  | |  |    
-| [review/index.md](review/index.md) |  | |  |    
-| [review/reviewer/comments.md](review/reviewer/comments.md ) |  | |  |  
-| [review/reviewer/index.md](review/reviewer/index.md ) |  | |  |  
-| [review/reviewer/looking-for.md](review/reviewer/looking-for.md ) |  | |  |  
-| [review/reviewer/navigate.md](review/reviewer/navigate.md ) |  | |  |  
-| [review/reviewer/pushback.md](review/reviewer/pushback.md ) |  | |  |  
-| [review/reviewer/speed.md](review/reviewer/speed.md ) |  | |  |  
-| [review/reviewer/standard.md](review/reviewer/standard.md ) |  | |  |   
-```        
+*   **LGTM**: "Looks Good to Me."的缩写，当评审者通过代码评审时会这么说。     
+     
 ### 如何参与翻译
 参考[翻译指南](CONTRIBUTEGUIDE.md)
 
