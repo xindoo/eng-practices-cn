@@ -26,7 +26,7 @@
 | [review/developer/index.md](review/developer/index.md) |  | |  |    
 | [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
 | [review/emergencies.md](review/emergencies.md) |  | |  |    
-| [review/index.md](review/index.md) |  | |  |    
+| [review/index.md](review/index.md) |[@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) | 2019-09-15 |    
 | [review/reviewer/comments.md](review/reviewer/comments.md ) |  | |  |  
 | [review/reviewer/index.md](review/reviewer/index.md ) |  | |  |  
 | [review/reviewer/looking-for.md](review/reviewer/looking-for.md ) |  | |  |  

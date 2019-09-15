@@ -1,69 +1,37 @@
-# Code Review Developer Guide
+# 代码评审开发者指南 
 
-## Introduction {#intro}
+## 介绍 {#intro} 
+代码评审是一些人提交一些代码片段，供另外一些人审阅的流程。    
+在谷歌，我们都是通过代码评审来保证代码和产品的质量。   
+这篇文档是对谷歌代码评审流程和策略的权威描述。  
+这一页是我们代码评审过程的概述。这篇指南其他有两个大的部分，分别是：  
 
-A code review is a process where someone other than the author(s) of a piece of
-code examines that code.
+-   **[评审者指南](reviewer/)**: 代码评审者的详细指南。  
+-   **[开发者指南](developer/)**: 提交变更评审的开发者的详细指南。 
 
-At Google we use code review to maintain the quality of our code and products.
+## 代码评审者需要关注什么？{#look_for}  
 
-This documentation is the canonical description of Google's code review
-processes and policies.
+代码评审者需要关注： 
+-   **设计**： 代码是否设计良好并且适合你们的系统？  
+-   **功能性**: 代码功能是否和开发者预期一致？这种方式是否对用户友好？  
+-   **复杂性**: 代码能不能更简单？ 其他开发者能否快速理解并在未来很容易地使用这段代码？   
+-   **测试**: 这段代码是否有真确和设计良好的自动化测试样例？   
+-   **命名**: 开发者有没有正确地对变量、类、方法等命名？    
+-   **注释**: 注释是否清晰有用？  
+-   **代码风格**: 代码风格是否遵循[谷歌代码风格指南](http://google.github.io/styleguide/)?    
+-   **文档**: 开发者是否更新了相关文档？   
 
+参考 **[如何做代码评审](reviewer/)** 获取更多信息。
 
+### 挑选最适合的代码评审者 {#best_reviewers}     
+通常而言，你都希望找个一个*最合适*的评审者在合理的时间里对你的变更作出评审。   
+最合适的评审者是那些能对你代码做出最全面最准确评价的人，一般情况下都是代码的维护者(他可能在所有者列表里也有可能不在)。 有时这意味着要不同的人阅读不同的部分。  
+如果你找到理想的评审者但他没有时间，你也至少应该抄送他。   
 
-This page is an overview of our code review process. There are two other large
-documents that are a part of this guide:
+### 当面评审 {#in_person}  
+如果你是和某个合格的代码评审者结对写的代码，那么这段代码可以认为已经通过评审了。   
+你也可以进行面对面的代码评审，评审者提出问题，而变更的开发人员回答问题。  
 
--   **[How To Do A Code Review](reviewer/)**: A detailed guide for code
-    reviewers.
--   **[The CL Author's Guide](developer/)**: A detailed guide for developers
-    whose CLs are going through review.
-
-## What Do Code Reviewers Look For? {#look_for}
-
-Code reviews should look at:
-
--   **Design**: Is the code well-designed and appropriate for your system?
--   **Functionality**: Does the code behave as the author likely intended? Is
-    the way the code behaves good for its users?
--   **Complexity**: Could the code be made simpler? Would another developer be
-    able to easily understand and use this code when they come across it in the
-    future?
--   **Tests**: Does the code have correct and well-designed automated tests?
--   **Naming**: Did the developer choose clear names for variables, classes,
-    methods, etc.?
--   **Comments**: Are the comments clear and useful?
--   **Style**: Does the code follow our
-    [style guides](http://google.github.io/styleguide/)?
--   **Documentation**: Did the developer also update relevant documentation?
-
-See **[How To Do A Code Review](reviewer/)** for more information.
-
-### Picking the Best Reviewers {#best_reviewers}
-
-In general, you want to find the *best* reviewers you can who are capable of
-responding to your review within a reasonable period of time.
-
-The best reviewer is the person who will be able to give you the most thorough
-and correct review for the piece of code you are writing. This usually means the
-owner(s) of the code, who may or may not be the people in the OWNERS file.
-Sometimes this means asking different people to review different parts of the
-CL.
-
-If you find an ideal reviewer but they are not available, you should at least CC
-them on your change.
-
-### In-Person Reviews {#in_person}
-
-If you pair-programmed a piece of code with somebody who was qualified to do a
-good code review on it, then that code is considered reviewed.
-
-You can also do in-person code reviews where the reviewer asks questions and the
-developer of the change speaks only when spoken to.
-
-## See Also {#seealso}
-
--   [How To Do A Code Review](reviewer/): A detailed guide for code reviewers.
--   [The CL Author's Guide](developer/): A detailed guide for developers whose
-    CLs are going through review.
+## 参见 {#seealso}  
+-   **[评审者指南](reviewer/)**: 代码评审者的详细指南。 
+-   **[开发者指南](developer/)**: 提交变更评审的开发者的详细指南。
