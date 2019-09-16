@@ -6,7 +6,7 @@
 
 *   [谷歌代码评审指南](review/index.md), 包含两个子章节：
     *   [评审者指南](review/reviewer/index.md)
-    *   [变更者指南](review/developer/index.md)
+    *   [开发者指南](review/developer/index.md)
 
 ## 术语
 
