@@ -1,14 +1,11 @@
-# The CL author's guide to getting through code review
+# CL开发者指南 —— 更好的通过code review
 
-The pages in this section contain best practices for developers going through
-code review. These guidelines should help you get through reviews faster and
-with higher-quality results. You don't have to read them all, but they are
-intended to apply to every Google developer, and many people have found it
-helpful to read the whole set.
+这一节介绍开发者CL的相关实践，帮助你以更高的代码质量通过Code Review。你不必全部读完，但是它们对每个谷歌开发人员都非常有用，当你全部阅读完成后会觉得非常有用
 
--   [Writing Good CL Descriptions](cl-descriptions.md)
--   [Small CLs](small-cls.md)
--   [How to Handle Reviewer Comments](handling-comments.md)
+-   [写好CL描述](cl-descriptions.md)
+-   [简短的CL](small-cls.md)
+-   [怎么处理审查这的评论建议](handling-comments.md)
 
-See also [How to Do a Code Review](../reviewer/), which gives detailed guidance
-for code reviewers.
+也请阅读 [怎样去做Code Review](../reviewer/), 了解更多有关code reviewer相关的细节。
+
+
