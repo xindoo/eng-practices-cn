@@ -20,7 +20,7 @@
 参考[翻译指南](CONTRIBUTEGUIDE.md)
 
 ## 中文贡献者
-[@xindoo](https://github.com/xindoo)  
+[@xindoo](https://github.com/xindoo)   [@Ensteinjun](https://github.com/Ensteinjun)   [@wangzhuo0978](https://github.com/wangzhuo0978)  [@LargeOrange](https://github.com/LargeOrange)
 
 
 ## License
