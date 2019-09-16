@@ -21,7 +21,7 @@
 | 章节 | 译者 | 翻译进度 | 预计完成时间 |   
 | :------------- |:-------------:|:-----:| :-----:|  
 | [README.md](README.md) |[@xindoo](https://github.com/xindoo)| 翻译完成(版本:47ea81e) | 2019-09-13 | 
-| [review/developer/cl-descriptions.md](review/developer/cl-descriptions.md) |  | |  |     
+| [review/developer/cl-descriptions.md](review/developer/cl-descriptions.md) | [@Ensteinjun](https://github.com/Ensteinjun) | | 2019-09-17 | 
 | [review/developer/handling-comments.md](review/developer/handling-comments.md) |  | |  |    
 | [review/developer/index.md](review/developer/index.md) |  | |  |    
 | [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
