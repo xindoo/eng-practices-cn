@@ -33,4 +33,4 @@
 | [review/reviewer/navigate.md](review/reviewer/navigate.md ) |  | |  |  
 | [review/reviewer/pushback.md](review/reviewer/pushback.md ) |  | |  |  
 | [review/reviewer/speed.md](review/reviewer/speed.md ) |  | |  |  
-| [review/reviewer/standard.md](review/reviewer/standard.md ) | [@xindoo](https://github.com/xindoo) |  翻译中(版本:47ea81e) | 2019-09-19 |   
+| [review/reviewer/standard.md](review/reviewer/standard.md ) | [@xindoo](https://github.com/xindoo) |  翻译完成(版本:47ea81e) | 2019-09-18|   
