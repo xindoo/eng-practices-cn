@@ -29,8 +29,8 @@
 | [review/index.md](review/index.md) |[@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) | 2019-09-15 |    
 | [review/reviewer/comments.md](review/reviewer/comments.md ) |  | |  |  
 | [review/reviewer/index.md](review/reviewer/index.md ) | [@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) |  2019-09-16 |  
-| [review/reviewer/looking-for.md](review/reviewer/looking-for.md ) |  | |  |  
+| [review/reviewer/looking-for.md](review/reviewer/looking-for.md ) | [@xindoo](https://github.com/xindoo) | 翻译中(版本：1ff5706) | 2019-09-30 |  
 | [review/reviewer/navigate.md](review/reviewer/navigate.md ) |  | |  |  
 | [review/reviewer/pushback.md](review/reviewer/pushback.md ) |  | |  |  
-| [review/reviewer/speed.md](review/reviewer/speed.md ) |  [@xindoo](https://github.com/xindoo)  | 翻译中(版本:47ea81e) | 2019-09-20 |  
+| [review/reviewer/speed.md](review/reviewer/speed.md ) |  [@xindoo](https://github.com/xindoo)  | 翻译完成(版本:47ea81e) | 2019-09-25 |  
 | [review/reviewer/standard.md](review/reviewer/standard.md ) | [@xindoo](https://github.com/xindoo) |  翻译完成(版本:47ea81e) | 2019-09-18|   
