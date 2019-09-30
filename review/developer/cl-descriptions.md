@@ -1,52 +1,34 @@
-# Writing good CL descriptions
+# 写一个好的CL描述
 
+一个CL描述是做了**什么**更改以及**为什么**的公开记录。
+它将成为我们版本控制历史的永久组成部分，多年来除你的reviewer以外，还可能有数百人会阅读它。
+将来的开发者将会基于它的描述来搜索你的CL。
+将来可能会有人由于没有现成的细节，而根据他模糊的记忆来寻找你的改变。
+如果所有重要的细节都在代码中而不是描述中，那么他们将很难定位你的CL。
 
+## 第一行 {#firstline}
 
-A CL description is a public record of **what** change is being made and **why**
-it was made. It will become a permanent part of our version control history, and
-will possibly be read by hundreds of people other than your reviewers over the
-years.
+*   简短的摘要：将要做些什么
+*   完整的句子：将它写成一个命令（祈使句）
+*   接着紧跟一个空行
 
-Future developers will search for your CL based on its description. Someone in
-the future might be looking for your change because of a faint memory of its
-relevance but without the specifics handy. If all the important information is
-in the code and not the description, it's going to be a lot harder for them to
-locate your CL.
+CL描述的**第一行**应该是对CL正在**做的***具体*工作的简短总结，紧跟一个空行。
+在未来，这是大多数的代码搜索者在浏览一段代码的版本控制历史时会看到的，因此第一行应该足够有信息量，他们不必阅读你的CL或它的整个描述就可以大致了解你的CL实际做了什么。
+按照传统，CL描述的第一行是一个完整的句子，就像它是一个命令（一个祈使句）。
+例如，说\"**Delete** the FizzBuzz RPC and **replace** it with the new system."，而不是\"**Deleting** the FizzBuzz RPC and **replacing** it with the new system."。
+不过，你不必把其余的描述写成祈使句。
 
-## First Line {#firstline}
+## 正文内容丰富 {#informative}
 
-*   Short summary of what is being done.
-*   Complete sentence, written as though it was an order.
-*   Follow by empty line.
+其余描述应该是具有丰富的内容。它可能包括对正在解决的问题的简要描述，以及为什么这是最好的方法。
+如果这种方法有任何缺点，就应该提到。
+将相关的背景信息（例如bug数目，基准测试结果），以及设计文档的链接。
+即使是很小的CL也值得关注细节。请将来龙去脉放入CL中。
 
-The **first line** of a CL description should be a short summary of
-*specifically* **what** *is being done by the CL*, followed by a blank line.
-This is what most future code searchers will see when they are browsing the
-version control history of a piece of code, so this first line should be
-informative enough that they don't have to read your CL or its whole description
-just to get a general idea of what your CL actually *did*.
+## 不好的CL描述 {#bad}
 
-By tradition, the first line of a CL description is a complete sentence, written
-as though it were an order (an imperative sentence). For example, say
-\"**Delete** the FizzBuzz RPC and **replace** it with the new system." instead
-of \"**Deleting** the FizzBuzz RPC and **replacing** it with the new system."
-You don't have to write the rest of the description as an imperative sentence,
-though.
-
-## Body is Informative {#informative}
-
-The rest of the description should be informative. It might include a brief
-description of the problem that's being solved, and why this is the best
-approach. If there are any shortcomings to the approach, they should be
-mentioned. If relevant, include background information such as bug numbers,
-benchmark results, and links to design documents.
-
-Even small CLs deserve a little attention to detail. Put the CL in context.
-
-## Bad CL Descriptions {#bad}
-
-"Fix bug" is an inadequate CL description. What bug? What did you do to fix it?
-Other similarly bad descriptions include:
+"Fix bug"是一个不充分的CL描述。是什么bug？你是怎么修复它的？
+其他一些相似的不好的CL描述:
 
 -   "Fix build."
 -   "Add patch."
@@ -55,15 +37,13 @@ Other similarly bad descriptions include:
 -   "Add convenience functions."
 -   "kill weird URLs."
 
-Some of those are real CL descriptions. Their authors may believe they are
-providing useful information, but they are not serving the purpose of a CL
-description.
+这里有一些是真实的CL描述。他们的作者可能认为他们提供的信息是有用的，但他们并没有给出一个CL描述的意图。
 
-## Good CL Descriptions {#good}
+## 好的CL描述 {#good}
 
-Here are some examples of good descriptions.
+这里有一些好的CL描述的例子.
 
-### Functionality change
+### 功能改变
 
 > rpc: remove size limit on RPC server message freelist.
 >
@@ -72,11 +52,9 @@ Here are some examples of good descriptions.
 > slowly over time, so that idle servers eventually release all freelist
 > entries.
 
-The first few words describe what the CL actually does. The rest of the
-description talks about the problem being solved, why this is a good solution,
-and a bit more information about the specific implementation.
+前几个词描述了CL描述实际做了什么。其余描述在说明解决的问题，为什么这是一个好的方案，以及具体实现的细节。
 
-### Refactoring
+### 重构
 
 > Construct a Task with a TimeKeeper to use its TimeStr and Now methods.
 >
@@ -91,12 +69,11 @@ and a bit more information about the specific implementation.
 >
 > Continuing the long-range goal of refactoring the Borglet Hierarchy.
 
-The first line describes what the CL does and how this is a change from the
-past. The rest of the description talks about the specific implementation, the
-context of the CL, that the solution isn't ideal, and possible future direction.
-It also explains *why* this change is being made.
+第一行描述了CL做了什么，以及它是如何与过去发生变化的。
+其余的描述将讨论具体的实现、CL的来龙去脉、解决方案的不理想以及未来可能的方向。
+它同样是解释*为什么*要进行这个修改。
 
-### Small CL that needs some context
+### 需要背景的小CL
 
 > Create a Python3 build rule for status.py.
 >
@@ -106,14 +83,12 @@ It also explains *why* this change is being made.
 > instead of Python2, and significantly simplifies some automated build file
 > refactoring tools being worked on currently.
 
-The first sentence describes what's actually being done. The rest of the
-description explains *why* the change is being made and gives the reviewer a lot
-of context.
 
-## Review the description before submitting the CL
+第一句描述了实际做了什么。其余的描述解释了*为什么*要进行更改，并给了reviewer很多背景。
 
-CLs can undergo significant change during review. It can be worthwhile to review
-a CL description before submitting the CL, to ensure that the description still
-reflects what the CL does.
+## 在提交CL之前，请review描述
 
-Next: [Small CLs](small-cls.md)
+在Review期间CL可能会经历重大改变。
+在提交CL之前，有必要review CL描述，以确保描述仍然反映CL所做的事情。
+
+下一章: [小的CL](small-cls.md)
