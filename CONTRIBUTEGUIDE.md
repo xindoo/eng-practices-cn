@@ -25,7 +25,7 @@
 | [review/developer/handling-comments.md](review/developer/handling-comments.md) |  | |  |    
 | [review/developer/index.md](review/developer/index.md) | [@LargeOrange](https://github.com/LargeOrange) | 翻译完成(版本:47ea81e) | 2019-09-16 |    
 | [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
-| [review/emergencies.md](review/emergencies.md) | [@wangzhuo] | | 2019-09-22 |    
+| [review/emergencies.md](review/emergencies.md) | [@wangzhuo] | 翻译完成(版本:47ea81e) | 2019-09-22 |    
 | [review/index.md](review/index.md) |[@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) | 2019-09-15 |    
 | [review/reviewer/comments.md](review/reviewer/comments.md ) | [@LargeOrange](https://github.com/LargeOrange)  | |  |  
 | [review/reviewer/index.md](review/reviewer/index.md ) | [@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) |  2019-09-16 |  
