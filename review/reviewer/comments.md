@@ -1,70 +1,38 @@
-# How to write code review comments
+# 怎样写代码评注
 
 
 
-## Summary
+## 概要
 
--   Be kind.
--   Explain your reasoning.
--   Balance giving explicit directions with just pointing out problems and
-    letting the developer decide.
--   Encourage developers to simplify code or add code comments instead of just
-    explaining the complexity to you.
+-   礼貌.
+-   解释你的观点.
+-   明确指出方向和问题，帮助开发人员去权衡作出决定.
+-   鼓励开发人员通过注释和精简代码来解决你的困惑而不是通过解释
 
-## Courtesy
+## 礼貌
 
-In general, it is important to be
-courteous and respectful while also being
-very clear and helpful to the developer whose code you are reviewing. One way to
-do this is to be sure that you are always making comments about the *code* and
-never making comments about the *developer*. You don't always have to follow
-this practice, but you should definitely use it when saying something that might
-otherwise be upsetting or contentious. For example:
+通常来说当你code review代码时保持礼貌和尊重能使开发人员更加清晰，得到更多帮助。这样是为了保证你的代码评论仅仅针对的是*code*而不是针对*开发人员*。你不必一直这么去做，但是当你的评论会让开发人员生气或者产生争执时有必要这么去做。比如：
 
-Bad: "Why did **you** use threads here when there's obviously no benefit to be
-gained from concurrency?"
+不好的例子: "**你**为什么会在这里使用线程，这样做难道会有任何好处？"
 
-Good: "The concurrency model here is adding complexity to the system without any
-actual performance benefit that I can see. Because there's no performance
-benefit, it's best for this code to be single-threaded instead of using multiple
-threads."
+好的例子: "我并没有发现这个并发模块给程序带来了多少帮助，并且还增加了程序的复杂性，因此我认为这段代码最好是用单线程而不是多线程。
 
-## Explain Why {#why}
+## 解释清楚原因 {#原因}
 
-One thing you'll notice about the "good" example from above is that it helps the
-developer understand *why* you are making your comment. You don't always need to
-include this information in your review comments, but sometimes it's appropriate
-to give a bit more explanation around your intent, the best practice you're
-following, or how your suggestion improves code health.
+从上面“好”的例子当中你能发现，这样有助于开发人员理解*为什么*你写了这些评注。你不一定非得包含这些信息在你的评注里面，但是适当的多解释你的意图或者多给出一些提升代码质量的建议都是非常好的实践。
 
-## Giving Guidance {#guidance}
+## 给予知道 {#指导}
 
-**In general it is the developer's responsibility to fix a CL, not the
-reviewer's.** You are not required to do detailed design of a solution or write
-code for the developer.
+**通常来说修复CL是开发人员的职责而不是评审人员的**。你不需要向开发人员提供详细的解决方案或者代码。
 
-This doesn't mean the reviewer should be unhelpful, though. In general you
-should strike an appropriate balance between pointing out problems and providing
-direct guidance. Pointing out problems and letting the developer make a decision
-often helps the developer learn, and makes it easier to do code reviews. It also
-can result in a better solution, because the developer is closer to the code
-than the reviewer is.
+但是这并不意味着评审员就不应该提供帮助。你需要在指出问题和提供直接指导之间找到平衡。指出问题并且帮助开发人员决策能够帮助开发人员学同事让code review变得更加简单。这样也能产生更好的方案，因为开发人员比评审者更加了解代码。
 
-However, sometimes direct instructions, suggestions, or even code are more
-helpful. The primary goal of code review is to get the best CL possible. A
-secondary goal is improving the skills of developers so that they require less
-and less review over time.
+尽管这样，有时候直接给出指导，建议甚至是代码更有帮助。code review的主要目的是尽可能得到最好的CL。其次是提高开发人员的技能这样就能减少以后评审的次数。
 
-## Accepting Explanations {#explanations}
+## 接受注释 {#注释}
 
-If you ask a developer to explain a piece of code that you don't understand,
-that should usually result in them **rewriting the code more clearly**.
-Occasionally, adding a comment in the code is also an appropriate response, as
-long as it's not just explaining overly complex code.
+当你要求开发人员解释一段你看不懂的代码的时候，通常的结果是**他们写代码，让代码更清晰**。当一段代码不是太过于复杂的时候通过加一些注释偶尔也是一种不错的做法。
 
-**Explanations written only in the code review tool are not helpful to future
-code readers.** They are acceptable only in a few circumstances, such as when
-you are reviewing an area you are not very familiar with and the developer
-explains something that normal readers of the code would have already known.
+**注释仅仅写在code review工具里面不利于将来的代码阅读者。**只有极少数情况是可行的，比如你对你评审的需求不太熟悉，但是开发人员解释的是大多数人都知道的。
 
-Next: [Handling Pushback in Code Reviews](pushback.md)
+下一节: [处理代码评审回推](pushback.md)
