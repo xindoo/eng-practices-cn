@@ -1,79 +1,39 @@
-# Navigating a CL in review
+# CL指南
 
 
 
-## Summary
+## 主题
 
-Now that you know [what to look for](looking-for.md), what's the most efficient
-way to manage a review that's spread across multiple files?
+现在你知道了[要从CL中得到什么](looking-for.md)，那能在众多文件中完成评审的方法是什么？
 
-1.  Does the change make sense? Does it have a good
-    [description](../developer/cl-descriptions.md)?
-2.  Look at the most important part of the change first. Is it well-designed
-    overall?
-3.  Look at the rest of the CL in an appropriate sequence.
+1.  这条改动是否说的通？这改动是不是有一个好的[描述](../developer/cl-descriptions.md)?
+2.  首先阅读最重要的改动。总体上是不是一个好的设计？
+3.  按照合适的顺序阅读省下的CL.
 
-## Step One: Take a broad view of the change {#step_one}
+## 第一步: 全面了解改动
 
-Look at the [CL description](../developer/cl-descriptions.md) and what the CL
-does in general. Does this change even make sense? If this change shouldn't have
-happened in the first place, please respond immediately with an explanation of
-why the change should not be happening. When you reject a change like this, it's
-also a good idea to suggest to the developer what they should have done instead.
+阅读[CL描述](../developer/cl-descriptions.md)并且明白CL大体内容。这些修改是否有意义？首先如果这个修改不应该有，请立刻说明为什么这些修改不应该有。当你因为这个拒绝了这次改动提交时，告诉开发人员该怎么去做是非常好的。
 
-For example, you might say "Looks like you put some good work into this, thanks!
-However, we're actually going in the direction of removing the FooWidget system
-that you're modifying here, and so we don't want to make any new modifications
-to it right now. How about instead you refactor our new BarWidget class?"
+例如，您可能会说：“看起来您为此做了一些出色的工作，谢谢！但是，我们实际上正着手删除FooWidget系统，您正在此处进行修改，因此我们不想进行任何新的修改现在。所以，您可以重构我们的新BarWidget类吗？"
 
-Note that not only did the reviewer reject the current CL and provide an
-alternative suggestion, but they did it *courteously*. This kind of courtesy is
-important because we want to show that we respect each other as developers even
-when we disagree.
+请注意，审阅者不仅拒绝了当前的CL并提供了替代建议，但他们*礼貌*地做到了。这种礼貌是重要，因为我们想表明我们甚至在开发人员之间也相互尊重，尤其是当我们意见不同时。
 
-If you get more than a few CLs that represent changes you don't want to make,
-you should consider re-working your team's development process or the posted
-process for external contributors so that there is more communication before CLs
-are written. It's better to tell people "no" before they've done a ton of work
-that now has to be thrown away or drastically re-written.
+如果您得到的多个CL并且您不想进行的更改，您应该考虑重新设计团队的开发流程或发布的外部贡献者的流程，以便在CL完成之前进行更多的交流。最好在做大量工作之前告诉人们“不必做”，因为现在要将其丢弃或彻底重写。
 
-## Step Two: Examine the main parts of the CL {#step_two}
+## 第二步: 检查CL的主要部分
 
-Find the file or files that are the "main" part of this CL. Often, there is one
-file that has the largest number of logical changes, and it's the major piece of
-the CL. Look at these major parts first. This helps give context to all of the
-smaller parts of the CL, and generally accelerates doing the code review. If the
-CL is too large for you to figure out which parts are the major parts, ask the
-developer what you should look at first, or ask them to
-[split up the CL into multiple CLs](../developer/small-cls.md).
+查找属于此CL的“主要”部分的文件。通常来说一个CL最重要的部分是它逻辑修改数最多的那个文件。这样有助于了解相关的CL，通常来说会加快code review。如果CL太大，您无法确定哪些部分是主要部分，请开发人员告诉你应该首先看什么，或要求他们[将CL拆分为多个CL](../developer/small-cls.md)。
 
-If you see some major design problems with this part of the CL, you should send
-those comments immediately, even if you don't have time to review the rest of
-the CL right now. In fact, reviewing the rest of the CL might be a waste of
-time, because if the design problems are significant enough, a lot of the other
-code under review is going to disappear and not matter anyway.
+如果您发现CL的这一部分存在一些主要的设计问题，则即使您现在没有时间审查CL的其余部分，也应立即写下这些评注。 实际上，检查其余的CL可能会浪费时间，因为如果设计问题足够严重，那么许多其他正在检查的代码将消失并且无论如何都不会发生。
 
-There are two major reasons it's so important to send these major design
-comments out immediately:
+立即写下这些主要设计评注非常重要有两个主要原因：
 
--   Developers often mail a CL and then immediately start new work based on that
-    CL while they wait for review. If there are major design problems in the CL
-    you're reviewing, they're also going to have to re-work their later CL. You
-    want to catch them before they've done too much extra work on top of the
-    problematic design.
--   Major design changes take longer to do than small changes. Developers nearly
-    all have deadlines; in order to make those deadlines and still have quality
-    code in the codebase, the developer needs to start on any major re-work of
-    the CL as soon as possible.
+-   开发人员通常会邮寄一个CL，然后在等待审核时立即基于该CL进行新工作。 如果您正在审查的CL中存在重大	 设计问题，那么他们也将不得不重新设计其以后的CL。你能在他们做太多无用功之前制止他们。
 
-## Step Three: Look through the rest of the CL in an appropriate sequence {#step_three}
+-   重要的设计变更比小的变更需要更长的时间。 开发人员几乎都有截止日期；为了在截止日期之前完成工作，	并在代码库中保留高质量的代码，开发人员需要尽快开始CL的所有主要的重做。
 
-Once you've confirmed there are no major design problems with the CL as a whole,
-try to figure out a logical sequence to look through the files while also making
-sure you don't miss reviewing any file. Usually after you've looked through the
-major files, it's simplest to just go through each file in the order that
-the code review tool presents them to you. Sometimes it's also helpful to read the tests
-first before you read the main code, because then you have an idea of what the
-change is supposed to be doing.
+## 第三步:以适当的顺序浏览其余的CL
 
-Next: [Speed of Code Reviews](speed.md)
+确认CL整体上没有大的设计问题后，请尝试找出逻辑顺序来浏览文件，同时还要确保不要错过对任何文件的审查。通常，在浏览了主要文件之后，按照代码审查工具向您展示它们的顺序浏览每个文件是最简单的。有时在阅读主要代码之前先阅读测试代码也是有帮助的，因为这样您就可以知道更改应该做什么。
+
+下一节: [快速的code review](speed.md)
