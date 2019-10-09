@@ -22,15 +22,15 @@
 | :------------- |:-------------:|:-----:| :-----:|  
 | [README.md](README.md) |[@xindoo](https://github.com/xindoo)| 翻译完成(版本:47ea81e) | 2019-09-13 | 
 | [review/developer/cl-descriptions.md](review/developer/cl-descriptions.md) | [@Ensteinjun](https://github.com/Ensteinjun) | 翻译完成(版本:dda5915) | 2019-09-29 | 
-| [review/developer/handling-comments.md](review/developer/handling-comments.md) |  | |  |    
+| [review/developer/handling-comments.md](review/developer/handling-comments.md) |[@xindoo](https://github.com/xindoo)| 翻译中(版本:47ea81e) | 2019-10-13 | 
 | [review/developer/index.md](review/developer/index.md) | [@LargeOrange](https://github.com/LargeOrange) | 翻译完成(版本:47ea81e) | 2019-09-16 |    
 | [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
 | [review/emergencies.md](review/emergencies.md) | [@wangzhuo] | 翻译完成(版本:47ea81e) | 2019-09-22 |    
 | [review/index.md](review/index.md) |[@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) | 2019-09-15 |    
-| [review/reviewer/comments.md](review/reviewer/comments.md ) | [@LargeOrange](https://github.com/LargeOrange)  | |  |  
+| [review/reviewer/comments.md](review/reviewer/comments.md ) | [@LargeOrange](https://github.com/LargeOrange)  | 翻译完成(版本:47ea81e) | 20191008 |  
 | [review/reviewer/index.md](review/reviewer/index.md ) | [@xindoo](https://github.com/xindoo) | 翻译完成(版本:47ea81e) |  2019-09-16 |  
 | [review/reviewer/looking-for.md](review/reviewer/looking-for.md ) | [@xindoo](https://github.com/xindoo) | 翻译完成(版本:1ff5706) | 2019-10-08 |  
-| [review/reviewer/navigate.md](review/reviewer/navigate.md ) | [@LargeOrange](https://github.com/LargeOrange)  | |  |  
+| [review/reviewer/navigate.md](review/reviewer/navigate.md ) | [@LargeOrange](https://github.com/LargeOrange)  | 翻译完成(版本:47ea81e) | 20191008 |  
 | [review/reviewer/pushback.md](review/reviewer/pushback.md ) | [@xindoo](https://github.com/xindoo)  | 翻译完成(版本:47ea81e)| 2019-10-09 |  
 | [review/reviewer/speed.md](review/reviewer/speed.md ) |  [@xindoo](https://github.com/xindoo)  | 翻译完成(版本:47ea81e) | 2019-09-25 |  
 | [review/reviewer/standard.md](review/reviewer/standard.md ) | [@xindoo](https://github.com/xindoo) |  翻译完成(版本:47ea81e) | 2019-09-18|   
