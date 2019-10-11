@@ -22,7 +22,7 @@
 | :------------- |:-------------:|:-----:| :-----:|  
 | [README.md](README.md) |[@xindoo](https://github.com/xindoo)| 翻译完成(版本:47ea81e) | 2019-09-13 | 
 | [review/developer/cl-descriptions.md](review/developer/cl-descriptions.md) | [@Ensteinjun](https://github.com/Ensteinjun) | 翻译完成(版本:dda5915) | 2019-09-29 | 
-| [review/developer/handling-comments.md](review/developer/handling-comments.md) |[@xindoo](https://github.com/xindoo)| 翻译中(版本:47ea81e) | 2019-10-13 | 
+| [review/developer/handling-comments.md](review/developer/handling-comments.md) |[@xindoo](https://github.com/xindoo)| 翻译完成(版本:47ea81e) | 2019-10-11 | 
 | [review/developer/index.md](review/developer/index.md) | [@LargeOrange](https://github.com/LargeOrange) | 翻译完成(版本:47ea81e) | 2019-09-16 |    
 | [review/developer/small-cls.md](review/developer/small-cls.md) |  | |  |    
 | [review/emergencies.md](review/emergencies.md) | [@wangzhuo] | 翻译完成(版本:47ea81e) | 2019-09-22 |    
