@@ -1,78 +1,32 @@
-# How to handle reviewer comments
+# 如何处理评审者的评论 
 
+当你提交了一个变更做Code Review时，很可能你都会收到评审者在变更中的评论。这里有一些处理这些评论的建议。 
 
+## 不要掺杂个人情感 
 
-When you've sent a CL out for review, it's likely that your reviewer will
-respond with several comments on your CL. Here are some useful things to know
-about handling reviewer comments.
+Code Review的目标是维护代码库和产品的质量。如果评审者批评了你的代码，可以理解为他们在帮你、帮整个代码库、甚至是帮整个公司，而不是攻击你或者是质疑你的能力。 
 
-## Don't Take it Personally {#personal}
+有时候评审者会情绪低落，然后在评论中说出一些令人沮丧的话，虽然评审者这样做不对，但作为开发者你应当有心理准备。问问你自己，“评审者试图与我交流的建设性意见是什么？” 然后照他们说的那些去做。  
 
-The goal of review is to maintain the quality of our codebase and our products.
-When a reviewer provides a critique of your code, think of it as their attempt
-to help you, the codebase, and Google, rather than as a personal attack on you
-or your abilities.
+**永远不要回应充满怒气的评论**，Code Review工具中违反职业礼仪的情况永远存在。如果你真的忍无可忍，建议先离开电脑也会儿，或者干一些其他的事，等心情平复下来再回复。  
+ 
+通常，如果评审者没有以礼貌的方式提供反馈，请亲自向他们解释。如果你无法亲自或者通过视频和他们联系，就向他们发一份私人邮件。 友好地告诉他们你不喜欢的事情以及你希望他们做些什么。 如果他们也以非建设性的方式对此私密讨论做出回应，或者没有起到预期的作用，请酌情上报给您的经理。如果他们已经以不礼貌的方式回应，或者没有取得预期的效果，视情况汇报给你的经理。  
 
-Sometimes reviewers feel frustrated and they express that frustration in their
-comments. This isn't a good practice for reviewers, but as a developer you
-should be prepared for this. Ask yourself, "What is the constructive thing that
-the reviewer is trying to communicate to me?" and then operate as though that's
-what they actually said.
+## 修复代码 
 
-**Never respond in anger to code review comments.** That is a serious breach of
-professional etiquette that will live forever in the code review tool. If you
-are too angry or annoyed to respond kindly, then walk away from your computer
-for a while, or work on something else until you feel calm enough to reply
-politely.
+如果评审者说他们理解不了你代码中的某些内容，你首先应该把代码写清晰。如果让代码更清晰，添加注释来解释清楚代码的逻辑。 如果评论似乎毫无意义，那么您的答复应该只是代码查看工具中的解释。
 
-In general, if a reviewer isn't providing feedback in a way that's constructive
-and polite, explain this to them in person. If you can't talk to them in person
-or on a video call, then send them a private email. Explain to them in a kind
-way what you don't like and what you'd like them to do differently. If they also
-respond in a non-constructive way to this private discussion, or it doesn't have
-the intended effect, then
-escalate to your manager as
-appropriate.
+如果评审者无法理解你的某部分代码，那边可能未来的阅读者也可能理解不了。在Code Review工具中回应帮不了未来的读者，但是代码中的注释可以。  
 
-## Fix the Code {#code}
+## 想想你自己 
 
-If a reviewer says that they don't understand something in your code, your first
-response should be to clarify the code itself. If the code can't be clarified,
-add a code comment that explains why the code is there. If a comment seems
-pointless, only then should your response be an explanation in the code review
-tool.
+写一个变更会花费你很大的精力，提价Code Review时会感觉如释负重，而且自己也相当确定所有工作已经做完了。所以当评审者提出改进建议时，你很容易认为那些都是错的，或者认为是评审者给你不必要的阻挠，再或者觉得评审者应该让你提价变更。 无论如何，**不管你怎么想**，花点时间回想下评审者给你的反馈有助于提升公司的代码质量。你始终问下自己“如果评审者是对的呢？”  
 
-If a reviewer didn't understand some piece of your code, it's likely other
-future readers of the code won't understand either. Writing a response in the
-code review tool doesn't help future code readers, but clarifying your code or
-adding code comments does help them.
+如果你回答不了评审者的问题，那可能说明评审者的评论不够清楚。 
 
-## Think for Yourself {#think}
+如果你认真考虑过后依旧认为你是对的，放心大胆地解释清楚为什么你的方法对公司更有利。通常，评审者只是提供*建议*，并且希望你能思考出更好的方法。也许你已经知道一些评审者不知道的关于用户、代码库、或者变更，把这些都写下来，给评审者更多的上下文信息，通常你都可以根据某些事实和评审者达成某些共识。  
 
-Writing a CL can take a lot of work. It's often really satisfying to finally
-send one out for review, feel like it's done, and be pretty sure that no further
-work is needed. So when a reviewer comes back with comments on things that could
-be improved, it's easy to reflexively think the comments are wrong, the reviewer
-is blocking you unnecessarily, or they should just let you submit the CL.
-However, **no matter how certain you are** at this point, take a moment to step
-back and consider if the reviewer is providing valuable feedback that will help
-the codebase and Google. Your first question to yourself should always be, "Is
-the reviewer correct?"
+## 解决冲突 
 
-If you can't answer that question, it's likely the reviewer needs to clarify
-their comments.
+解决冲突的第一步，和你的评审者达成共识，如果无法达成共识，参阅[Code Review的标准](../reviewer/standard.md)获取更多内容。 
 
-If you *have* considered it and you still think you're right, feel free to
-respond with an explanation of why your method of doing things is better for the
-codebase, users, and/or Google. Often, reviewers are actually providing
-*suggestions* and they want you to think for yourself about what's best. You
-might actually know something about the users, codebase, or CL that the reviewer
-doesn't know. So fill them in; give them more context. Usually you can come to
-some consensus between yourself and the reviewer based on technical facts.
-
-## Resolving Conflicts {#conflicts}
-
-Your first step in resolving conflicts should always be to try to come to
-consensus with your reviewer. If you can't achieve consensus, see
-[The Standard of Code Review](../reviewer/standard.md), which gives principles
-to follow in such a situation.

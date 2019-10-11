@@ -1,83 +1,34 @@
-# Handling pushback in code reviews
+# 处理Code Review中的反驳  
 
+有时开发者会在Code Review中反驳你，他们可能不同意你的意见，或者抱怨你太严格了。   
 
+## 谁是对的? 
+当开发者不同意你的建议时，首先花点思考下他们是否是对的，但通常而言你比他们更熟悉代码，所以可能在某个方面理解更深。他们的争论有意义吗？从代码健康的角度来看他们的反驳有意义吗？如果是，让他们知道他们是对的，然后这个问题就解决了。  
 
-Sometimes a developer will push back on a code review. Either they will disagree
-with your suggestion or they will complain that you are being too strict in
-general.
+然而，开发者不总是对的，这种情况下评审者应当进一步介绍为什么他们的建议是对的。好的解释不仅得体现出对开发人员回复的理解，而且还要说明为什么要这么改。   
 
-## Who is right? {#who_is_right}
+如果评审者认为他们的建议可以改善代码质量，并且他们认为带来的代码质量改进值得开发者做这些额外的工作，评审者就应该坚持自己的立场。  
+**不积跬步无以至千里，不积小流无以成江河**  
 
-When a developer disagrees with your suggestion, first take a moment to consider
-if they are correct. Often, they are closer to the code than you are, and so
-they might really have a better insight about certain aspects of it. Does their
-argument make sense? Does it make sense from a code health perspective? If so,
-let them know that they are right and let the issue drop.
+有时候要让开发者接受，你得花很多时间反复解释，但始终确保该有的[礼貌](comments.md#courtesy)，并让开发者知道在知道他们了什么，即便是你不同意。  
 
-However, developers are not always right. In this case the reviewer should
-further explain why they believe that their suggestion is correct. A good
-explanation demonstrates both an understanding of the developer's reply, and
-additional information about why the change is being requested.
+## 惹恼开发者
 
-In particular, when the reviewer believes their suggestion will improve code
-health, they should continue to advocate for the change, if they believe the
-resulting code quality improvement justifies the additional work requested.
-**Improving code health tends to happen in small steps.**
+有时评审者会认为坚持让开发者做出改动，可能会惹恼开发者。有时开发者确实会恼怒，但这种情况通常都很短暂，而且之后他们会感激你帮助他们提高了代码质量。 如果你在Code Review中很有[礼貌](comments.md#courtesy)，开发者根本不会被惹恼，这种担心是多余的。通常，令惹恼开发者的是你写注解的方式，而不是你对代码质量的坚持。  
 
-Sometimes it takes a few rounds of explaining a suggestion before it really
-sinks in. Just make sure to always stay [polite](comments.md#courtesy) and let
-the developer know that you *hear* what they're saying, you just don't *agree*.
+## 稍后解决
 
-## Upsetting Developers {#upsetting_developers}
+一种常见的反驳原因是开发者希望能尽快完成任务。他们不想一轮又一轮地做Code Review，然后就会说他们会在后续变更中处理这些问题，你只需要通过就行。有些开发者做的很好，他们会立马提交后续变更处理这些问题。然而，经验告诉我们原始变更通过之后拖的时间越久，就越不可能修复。除非开发者在当前变更通过后*立马*修复，否则他们就不可能修复。这并不是开发者不负责任，而是因为他们有好多工作要做，而修复工作也会因为工作压力而被遗忘。所以最好坚持让开发者*现在*就在变更中处理掉这些问题，“留着以后清理”是一种不可取的方式。  
 
-Reviewers sometimes believe that the developer will be upset if the reviewer
-insists on an improvement. Sometimes developers do become upset, but it is
-usually brief and they become very thankful later that you helped them improve
-the quality of their code. Usually, if you are [polite](comments.md#courtesy) in
-your comments, developers actually don't become upset at all, and the worry is
-just in the reviewer's mind. Upsets are usually more about
-[the way comments are written](comments.md#courtesy) than about the reviewer's
-insistence on code quality.
+如果变更中引入了新的复杂性，提交之前必须清理掉，除非是[紧急情况](../emergencies.md)。 如果变更中暴露出一些目前还无法定位的问题，开发者应该记录下这些bug，并将其分配给他们自己，确保这些问题不会被遗忘。他们还可以在代码中加入 TODO 注释，指向已经记录好的 bug。   
 
-## Cleaning It Up Later {#later}
+## 抱怨太严格
 
-A common source of push back is that developers (understandably) want to get
-things done. They don't want to go through another round of review just to get
-this CL in. So they say they will clean something up in a later CL, and thus you
-should LGTM *this* CL now. Some developers are very good about this, and will
-immediately write a follow-up CL that fixes the issue. However, experience shows
-that as more time passes after a developer writes the original CL, the less
-likely this clean up is to happen. In fact, usually unless the developer does
-the clean up *immediately* after the present CL, it never happens. This isn't
-because developers are irresponsible, but because they have a lot of work to do
-and the cleanup gets lost or forgotten in the press of other work. Thus, it is
-usually best to insist that the developer clean up their CL *now*, before the
-code is in the codebase and "done." Letting people "clean things up later" is a
-common way for codebases to degenerate.
+如果你之前Code Review很宽容，然后突然变得严格起来，可能会引起一些开发者的抱怨。不过没关系，加快Code Review的[速度](speed.md)通常会让这些抱怨消失。  
 
-If a CL introduces new complexity, it must be cleaned up before submission
-unless it is an [emergency](../emergencies.md). If the CL exposes surrounding
-problems and they can't be addressed right now, the developer should file a bug
-for the cleanup and assign it to themselves so that it doesn't get lost. They
-can optionally also write a TODO comment in the code that references the filed
-bug.
+有时，这些抱怨可能需要几个月的时间才能消除，但最终开发者在看到产出的优质代码时会理解严格Code Review带来的价值。有时候，一旦发生某些事让他们真正看到严格Code Review的价值，抗议最大声的人甚至会成为你最坚定的支持者。  
 
-## General Complaints About Strictness {#strictness}
+## 解决冲突  
 
-If you previously had fairly lax code reviews and you switch to having strict
-reviews, some developers will complain very loudly. Improving the
-[speed](speed.md) of your code reviews usually causes these complaints to fade
-away.
+如果你遵循了上述方法，但仍然会在Code Review中遇到无法解决的冲突，请再次参阅[Code Review标准](standard.md)，了解那些有助于解决冲突的指导和原则。   
 
-Sometimes it can take months for these complaints to fade away, but eventually
-developers tend to see the value of strict code reviews as they see what great
-code they help generate. Sometimes the loudest protesters even become your
-strongest supporters once something happens that causes them to really see the
-value you're adding by being strict.
-
-## Resolving Conflicts {#conflicts}
-
-If you are following all of the above but you still encounter a conflict between
-yourself and a developer that can't be resolved, see
-[The Standard of Code Review](standard.md) for guidelines and principles that
-can help resolve the conflict.
