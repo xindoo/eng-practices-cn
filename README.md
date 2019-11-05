@@ -14,7 +14,7 @@
 
 *   **CL**: "changelist"的缩写，代表已经进入版本控制软件或者正在进行代码评审的变更。
     其他组织经常称为"change"或者"patch"。
-*   **LGTM**: "Looks Good to Me."的缩写，当评审者通过代码评审时会这么说。     
+*   **LGTM**: "Looks Good to Me."的缩写，评审者批准CL时会这么说。
      
 ### 如何参与翻译
 参考[翻译指南](CONTRIBUTEGUIDE.md)
