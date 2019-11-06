@@ -20,13 +20,14 @@
 参考[翻译指南](CONTRIBUTEGUIDE.md)
 
 ## 中文贡献者
-[@xindoo](https://github.com/xindoo)   [@Ensteinjun](https://github.com/Ensteinjun)   [@wangzhuo0978](https://github.com/wangzhuo0978)  [@LargeOrange](https://github.com/LargeOrange)
+[@xindoo](https://github.com/xindoo)  [@LargeOrange](https://github.com/LargeOrange) [@hanfeisun](https://github.com/hanfeisun) [@Ensteinjun](https://github.com/Ensteinjun)   [@wangzhuo0978](https://github.com/wangzhuo0978)  
 
 
-## License
+## 许可协议
 
-The documents in this project are licensed under the CC-By 3.0 License, which
-encourages you to share these documents. See
-https://creativecommons.org/licenses/by/3.0/ for more details.
+本文遵循[CC-By 3.0协议](https://creativecommons.org/licenses/by/3.0/) 您可以自由地：  
+
+- 共享 - 在任何媒介以任何形式复制、发行本作品
+- 演绎 - 修改、转换或以本作品为基础进行创作在任何用途下，甚至商业目的。
 
 <a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a>
